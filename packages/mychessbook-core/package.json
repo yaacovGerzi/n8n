@@ -1,0 +1,22 @@
+{
+  "name": "mychessbook-core",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist .turbo",
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "pnpm watch",
+    "format": "biome format --write .",
+    "format:check": "biome ci .",
+    "lint": "eslint .",
+    "lintfix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:dev": "jest --watch"
+  },
+  "files": ["dist/**/*"],
+  "devDependencies": {},
+  "dependencies": {}
+}
